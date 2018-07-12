@@ -1,0 +1,8 @@
+---
+
+- name: Install pyscopg2 (for Ansible)
+  apt:
+    name: python-psycopg2
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600

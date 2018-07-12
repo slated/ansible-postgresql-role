@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    postgresql_install_client: yes
+    postgresql_install_server: yes
+  roles:
+    - role: ansible-postgresql-role

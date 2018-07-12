@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Rod Morison
+  description: Postgresql client and server installations
+  company: Rod Morison Software
+  license: Apache
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+  galaxy_tags:
+    - postgresql
+    - django
+
+dependencies:

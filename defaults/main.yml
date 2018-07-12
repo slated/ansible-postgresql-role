@@ -1,0 +1,9 @@
+---
+# Defaults for postgresql
+
+postgresql_version: 9.6
+postgresql_install_client: no
+postgresql_install_server: no
+postgresql_conf_file: '/etc/postgresql/{{ postgresql_version }}/main/postgresql.conf'
+postgresql_hba_file: '/etc/postgresql/{{ postgresql_version }}/main/pg_hba.conf'
+postgresql_server_listen_address: 127.0.0.1

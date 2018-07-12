@@ -1,0 +1,21 @@
+---
+# tasks file for postgresql
+
+- import_tasks: add_repo.yml
+  become: yes
+  tags: [install, postgresql-client, postgresql-server]
+
+# Used in Ansible postgresql modules
+- import_tasks: install_psycopg2.yml
+  become: yes
+  tags: [install, install-postgresql-client, install-postgresql-server]
+
+- import_tasks: install_client.yml
+  become: yes
+  tags: [install, install-postgresql-client]
+  when: postgresql_install_client is defined and postgresql_install_client
+
+- import_tasks: install_server.yml
+  become: yes
+  tags: [install, install-postgresql-server]
+  when: postgresql_install_server is defined and postgresql_install_server

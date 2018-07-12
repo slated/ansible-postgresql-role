@@ -1,0 +1,12 @@
+---
+# Install Official PostgreSQL [repository] for debian-based distributions
+# [repository]: http://www.postgresql.org/download/
+
+- name: Adding Postgres APT repository key
+  apt_key:
+    id: ACCC4CF8
+    url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
+
+- name: Add Postgres official APT repository
+  apt_repository:
+    repo: "deb http://apt.postgresql.org/pub/repos/apt/ {{ansible_distribution_release}}-pgdg main"
