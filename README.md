@@ -1,4 +1,6 @@
-postgresql
+[![Build Status](https://travis-ci.org/slated/ansible-postgresql-role.svg?branch=master)](https://travis-ci.org/slated/ansible-postgresql-role)
+
+PostgreSQL
 ==========
 
 Add Postgresql official Apt repo, optionally install and configure
